@@ -1,8 +1,9 @@
 import express from "express";
-// import cors from "cors";
+import cors from "cors";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.routes.js";
+import Prescription from "./routes/prescription.routes.js";
 
 dotenv.config();
 
@@ -11,11 +12,12 @@ const app = express();
 connectDB();
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 app.use(express.json()); // important to parse JSON
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/prescription", Prescription);
 
 // Test route
 app.get("/", (req, res) => {
