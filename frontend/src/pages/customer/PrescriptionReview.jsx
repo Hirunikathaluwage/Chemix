@@ -24,9 +24,6 @@ const PrescriptionReview = () => {
       <main className="max-w-5xl mx-auto px-6 py-16 space-y-8">
         {/* Title */}
         <div className="text-center">
-          <h2 className="text-2xl font-semibold text-[#111827]">
-            Upload Prescription
-          </h2>
           <p className="text-sm text-[#4B5563] mt-2">
             Review the available medicines and confirm your order.
           </p>
@@ -36,8 +33,7 @@ const PrescriptionReview = () => {
         <div className="bg-[#CCFBF1] border border-[#0F766E]/20 p-4 rounded-lg text-sm text-[#0F766E]">
           ✓ Prescription Verified Successfully
           <p className="text-[#4B5563] text-xs mt-1">
-            We identified the medicines in your prescription. Please review the
-            availability below.
+            Please review the availability below.
           </p>
         </div>
 
